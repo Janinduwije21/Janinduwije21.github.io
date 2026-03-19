@@ -8,4 +8,11 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
+  server: {
+    middlewareMode: true,
+    mimeTypes: {
+      '.jsx': 'application/javascript',
+      '.tsx': 'application/javascript'
+    }
+  }
 })
