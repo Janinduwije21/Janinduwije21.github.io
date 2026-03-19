@@ -20,5 +20,6 @@ If you are developing a production application, we recommend using TypeScript wi
 ## Projects
 
 - [Tea Smart UI](https://github.com/Janinduwije21/tea_smart) - A comprehensive UI/UX design project showcasing intuitive user flows and modern design principles.
+- [NextOra](https://www.nextora.lk) - Innovation All In One Platform. A comprehensive university student portal developed as a Level 5 (2nd Year) SDGP group project, designed to unify campus life through intelligent digital solutions.
 
 # Janinduwije21.github.io

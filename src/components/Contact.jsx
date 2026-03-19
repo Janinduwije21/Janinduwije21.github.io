@@ -37,17 +37,17 @@ const Contact = () => {
     {
       icon: <FaEnvelope size={24} />,
       title: 'Email',
-      content: 'janindu.wijesooriya@example.com'
+      content: 'janinduwije21@gmail.com'
     },
     {
       icon: <FaPhone size={24} />,
       title: 'Phone',
-      content: '+94 76 123 4567'
+      content: '+94 76 154 5954'
     },
     {
       icon: <FaMapMarkerAlt size={24} />,
       title: 'Location',
-      content: '123, Galle Road, Colombo, Sri Lanka'
+      content: 'No.40, Canel Road, Wadugoda Hikkaduwa, Sri Lanka'
     }
   ];
 

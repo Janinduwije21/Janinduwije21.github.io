@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FiMenu, FiX } from 'react-icons/fi';
 import './Navigation.css';
 
 const Navigation = () => {
@@ -12,6 +11,7 @@ const Navigation = () => {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'skills', label: 'Skills' },
+    { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
     { id: 'contact', label: 'Contact' }
   ];
@@ -65,6 +65,12 @@ const Navigation = () => {
     }
   };
 
+  const handleNavContainerClick = () => {
+    if (window.innerWidth <= 768) {
+      setIsMenuOpen((prev) => !prev);
+    }
+  };
+
   return (
     <motion.nav 
       className={`navigation ${isScrolled ? 'scrolled' : ''}`}
@@ -72,8 +78,11 @@ const Navigation = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, type: 'spring', stiffness: 100 }}
     >
-      <div className="nav-container">
-        <motion.div 
+      <div
+        className={`nav-container ${isMenuOpen ? 'menu-open' : ''}`}
+        onClick={handleNavContainerClick}
+      >
+        <motion.div
           className="nav-logo"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -81,15 +90,6 @@ const Navigation = () => {
           <span className="logo-text">JW</span>
         </motion.div>
 
-        <button
-          type="button"
-          className="nav-toggle"
-          aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
-          aria-expanded={isMenuOpen}
-          onClick={() => setIsMenuOpen((prev) => !prev)}
-        >
-          {isMenuOpen ? <FiX /> : <FiMenu />}
-        </button>
 
         <ul className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
           {navItems.map((item, index) => (

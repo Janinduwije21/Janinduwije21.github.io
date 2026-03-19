@@ -147,14 +147,22 @@
 
 .footer {
   background: var(--color-bg-dark);
-  padding: 2rem 0;
+  padding: 2rem;
   border-top: 4px solid var(--color-primary);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .footer p {

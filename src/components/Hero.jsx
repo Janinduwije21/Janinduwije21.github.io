@@ -79,10 +79,9 @@ const Hero = () => {
             <h3 className="info-label">I'am</h3>
             <h4 className="info-name">JANINDU<br/>WIJESOORIYA</h4>
             <p className="info-description">
-              I'm a UI/UX enthusiast and front-end developer based in Sri Lanka, 
-              passionate about crafting intuitive, user-centered web experiences. 
-              This website is my creative workspace—where thoughtful design meets clean, 
-              functional code.
+              I'm a UI/UX enthusiast and frontend developer based in Sri Lanka,
+              passionate about crafting intuitive, user centered web experiences.
+              This website is my creative workspace where thoughtful design meets clean, functional code.
             </p>
           </motion.div>
         </motion.div>

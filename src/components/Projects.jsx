@@ -27,14 +27,17 @@ const Projects = () => {
       title: 'Green Future',
       description: 'A responsive web application built with modern frameworks, focused on environmental awareness.',
       category: 'web-dev',
-      tags: ['React', 'Responsive', 'Animation']
+      tags: ['React', 'Responsive', 'Animation'],
+      link: 'https://github.com/Janinduwije21/Green-Future'
     },
     {
       id: 3,
-      title: 'Brand Identity System',
-      description: 'Complete branding and logo design for a tech startup with comprehensive brand guidelines.',
-      category: 'graphic-design',
-      tags: ['Branding', 'Logo', 'Guidelines']
+      title: 'NextOra',
+      description: 'A comprehensive university student portal developed as a Level 5 (2nd Year) SDGP group project, designed to unify campus life through intelligent digital solutions.',
+      category: 'web-dev',
+      tags: ['University Portal', 'Digital Solutions', 'Intranet'],
+      link: 'https://github.com/nextora-dev',
+      website: 'https://www.nextora.lk'
     },
     {
       id: 4,
@@ -48,7 +51,8 @@ const Projects = () => {
       title: 'Portfolio Website',
       description: 'Modern portfolio website with smooth animations and responsive design.',
       category: 'web-dev',
-      tags: ['React', 'Framer Motion', 'CSS']
+      tags: ['React', 'Framer Motion', 'CSS'],
+      link: 'https://github.com/Janinduwije21/Janinduwije21.github.io'
     },
     {
       id: 6,
@@ -56,6 +60,7 @@ const Projects = () => {
       description: 'Professional branding package for a financial services company.',
       category: 'branding',
       tags: ['Corporate', 'Logo', 'Print Design']
+      
     }
   ];
 
