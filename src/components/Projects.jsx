@@ -19,7 +19,8 @@ const Projects = () => {
       title: 'Tea Smart UI',
       description: 'A comprehensive UI/UX design project showcasing intuitive user flows and modern design principles.',
       category: 'ui-ux',
-      tags: ['UI Design', 'User Research', 'Prototyping']
+      tags: ['UI Design', 'User Research', 'Prototyping'],
+      link: 'https://github.com/Janinduwije21/tea_smart'
     },
     {
       id: 2,
@@ -156,9 +157,20 @@ const Projects = () => {
                       <span key={index} className="tag">{tag}</span>
                     ))}
                   </div>
-                  <button className="project-link">
-                    View Project →
-                  </button>
+                  {project.link ? (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      View Project →
+                    </a>
+                  ) : (
+                    <button className="project-link">
+                      View Project →
+                    </button>
+                  )}
                 </div>
               </motion.div>
             ))}

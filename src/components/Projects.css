@@ -176,6 +176,7 @@
   cursor: pointer;
   transition: all var(--transition-medium);
   margin-top: 1rem;
+  text-decoration: none;
 }
 
 .project-link:hover {
