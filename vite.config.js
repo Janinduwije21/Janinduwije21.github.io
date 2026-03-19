@@ -7,12 +7,5 @@ export default defineConfig({
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
-  ],
-  server: {
-    middlewareMode: true,
-    mimeTypes: {
-      '.jsx': 'application/javascript',
-      '.tsx': 'application/javascript'
-    }
-  }
+  ]
 })
